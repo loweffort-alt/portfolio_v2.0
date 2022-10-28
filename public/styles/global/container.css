@@ -1,0 +1,11 @@
+.globalContainer {
+  background: linear-gradient(
+    254.82deg,
+    #30c388 0%,
+    #86a8e7 50.18%,
+    #6c327c 100.35%
+  );
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
