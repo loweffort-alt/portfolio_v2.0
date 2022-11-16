@@ -1,0 +1,59 @@
+.background-logo {
+  width: 20%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  z-index: 1;
+}
+
+.Home-Body {
+  position: relative;
+  top: 50%;
+  translate: 0% -50%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 67px;
+}
+
+.Home-Info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.home-icons {
+  display: flex;
+  gap: 45px;
+  align-items: flex-end;
+}
+/* Slider */
+
+.slider {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  translate: -50% -50%;
+  gap: 30px;
+}
+
+.slider > div {
+  background: #e6e6e6;
+  opacity: 0.5;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.slider > .current-slider {
+  opacity: 1;
+  width: 90px;
+  border-radius: 10px;
+}
+
+/* Image */
+.Home-Image {
+  overflow: visible;
+}

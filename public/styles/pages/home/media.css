@@ -1,0 +1,83 @@
+/* Responsive */
+
+/* Responsive: Small Screen styles*/
+
+@media only screen and (max-width: 1024px) {
+  .background-logo {
+    width: 30%;
+  }
+}
+
+/* Responsive: Mobile styles*/
+
+@media only screen and (max-width: 480px) {
+  .background-logo {
+    width: 60%;
+  }
+}
+
+/*Responsive;: Iphone*/
+
+@media only screen and (max-width: 400px) {
+  /*tipography*/
+  h1 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  /*layout*/
+  .Home-Body {
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    justify-content: space-around;
+  }
+
+  .Home-Info {
+    flex-direction: column;
+  }
+
+  .background-logo {
+    width: 60%;
+  }
+
+  .home-icons {
+    gap: 20px;
+  }
+
+  .home-icons > a > img {
+    width: 80%;
+  }
+
+  .slider {
+    left: 95%;
+    top: 50%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .slider > div {
+    width: 10px;
+    height: 10px;
+  }
+
+  .slider > .current-slider {
+    width: 10px;
+    height: 30px;
+  }
+
+  .Home-Image {
+    width: 120%;
+    height: 120%;
+    translate: -8% 0;
+  }
+}
