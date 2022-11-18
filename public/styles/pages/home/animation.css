@@ -1,13 +1,18 @@
 /* Animation */
+
+/*Fade In Title*/
 .Home-Info {
   opacity: 0;
   animation: 2.5s 1 ease-out show forwards;
 }
 
-#Background {
-  /*display: none;*/
+@keyframes show {
+  to {
+    opacity: 1;
+  }
 }
 
+/*Home Image*/
 #Window {
   position: relative;
   translate: 150px -550px;
@@ -27,7 +32,7 @@
   position: relative;
   translate: 650px 0px;
   opacity: 0.7;
-  animation: DesktopX 1s cubic-bezier(0.06, 0.59, 0.76, 1.21) 1s 1 forwards;
+  animation: SillaX 1s cubic-bezier(0.06, 0.59, 0.76, 1.21) 1s 1 forwards;
 }
 
 #Man {
@@ -71,27 +76,10 @@
   }
 }
 
-@keyframes SillaX {
-  80% {
-    opacity: 1;
-    translate: 0px -10px;
-  }
-  100% {
-    opacity: 1;
-    translate: 0px 0px;
-  }
-}
-
 @keyframes ManX {
   to {
     translate: 0px 0px;
     opacity: 1;
     transform: translate(0.05px, -1px);
-  }
-}
-
-@keyframes show {
-  to {
-    opacity: 1;
   }
 }
