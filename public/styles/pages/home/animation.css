@@ -1,5 +1,3 @@
-/* Animation */
-
 /*Fade In Title*/
 .Home-Info {
   opacity: 0;
@@ -11,6 +9,19 @@
     opacity: 1;
   }
 }
+
+/*Blink dinamicText*/
+#dinamicText::after {
+  animation: blink 500ms ease infinite;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+
+/*Change Background Color*/
 
 /*Home Image*/
 #Window {
@@ -32,7 +43,7 @@
   position: relative;
   translate: 650px 0px;
   opacity: 0.7;
-  animation: SillaX 1s cubic-bezier(0.06, 0.59, 0.76, 1.21) 1s 1 forwards;
+  animation: DesktopX 1s cubic-bezier(0.06, 0.59, 0.76, 1.21) 1s 1 forwards;
 }
 
 #Man {

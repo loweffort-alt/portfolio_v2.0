@@ -16,7 +16,7 @@
   }
 }
 
-/*Responsive;: Iphone*/
+/*Responsive: Iphone*/
 
 @media only screen and (max-width: 400px) {
   .background-logo {
@@ -88,5 +88,10 @@
   .Slider > .current-slider {
     width: 10px;
     height: 30px;
+  }
+
+  /*DinamicText*/
+  #dinamicText {
+    height: 1.5em;
   }
 }

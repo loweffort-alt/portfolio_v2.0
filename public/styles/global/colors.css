@@ -1,0 +1,13 @@
+:root {
+  --wea: 45;
+  --hola: rgba(var(--wea), 61, 61);
+  --background: linear-gradient(
+    285.18deg,
+    #000000 0%,
+    var(--hola) 50%,
+    #000000 100%
+  );
+  --shadow-black: rgba(0, 0, 0, 0.5);
+  --white-one: #e6e6e6;
+  --white-two: #c0d7e0;
+}
