@@ -1,6 +1,5 @@
-const background = document.getElementById("globalContainer");
-const random = document.querySelector("html");
-let color = [115, 61, 61];
+const root = document.querySelector("html");
+let value = 61;
 let suma = true;
 let resta = false;
 
@@ -9,69 +8,41 @@ function componentToHex(c) {
   return hex.length == 1 ? "0" + hex : hex;
 }
 
-function rgbToHex(r, g, b) {
-  return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+function rgbToHex(arr) {
+  const hexcolor =
+    "#" +
+    componentToHex(arr[0]) +
+    componentToHex(arr[1]) +
+    componentToHex(arr[2]);
+  const wea = `linear-gradient(
+    285.18deg,
+    #000000 0%,
+    ${hexcolor} 50%,
+    #000000 100%
+  )`;
+  return wea;
 }
 
-//random.style.setProperty("--hola", `${rgbToHex(r, g, b)}`);
-
-//function changeColor(value) {
-//console.log(value);
-//if (value == 115) {
-//resta = true;
-//suma = false;
-//}
-//if (value > 60 && suma) {
-//value++;
-//}
-//if (value <= 115 && resta) {
-//value--;
-//}
-//if (value == 61) {
-//resta = false;
-//suma = true;
-//}
-////setTimeout(changeColor, 100);
-//}
-
-function changeColor() {
-  const weon = color.map((e) => {
-    if (e == 115) {
-      resta = true;
-      suma = false;
-    }
-    if (e <= 115 && resta) {
-      return e--;
-    }
-    if (e == 61) {
-      resta = false;
-      suma = true;
-    }
-    if (e >= 61 && suma) {
-      return e++;
-    }
-  });
+function changeNumber() {
+  let color = [0, value - 40, 61];
+  let pato = rgbToHex(color);
+  root.style.setProperty("--background", pato);
+  if (value == 115) {
+    resta = true;
+    suma = false;
+  }
+  if (value > 60 && suma) {
+    value = value + 1;
+  }
+  if (value <= 115 && resta) {
+    value = value - 1;
+  }
+  if (value == 61) {
+    resta = false;
+    suma = true;
+  }
 }
 
-for (var i = 1; i <= 3; i++) {
-  (function (index) {
-    setTimeout(function () {
-      if (e == 115) {
-        resta = true;
-        suma = false;
-      }
-      if (e <= 115 && resta) {
-        return e--;
-      }
-      if (e == 61) {
-        resta = false;
-        suma = true;
-      }
-      if (e >= 61 && suma) {
-        return e++;
-      }
-    }, i * 5000);
-  })(i);
-}
+const dinamicColor = setInterval(changeNumber, 100);
 
-export default changeColor();
+export default dinamicColor;

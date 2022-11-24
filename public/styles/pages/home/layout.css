@@ -20,7 +20,7 @@
 /* Image */
 .Home-Body > .Container-Image > .Home-Image {
   overflow: visible;
-  filter: drop-shadow(7px 7px 4px rgb(0, 0, 0, 0.5));
+  filter: drop-shadow(7px 7px 4px var(--shadow-black));
 }
 
 /*Title and icons*/
