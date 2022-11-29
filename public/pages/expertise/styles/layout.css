@@ -1,0 +1,8 @@
+.Expertise-Body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 67px;
+  background-color: rgba(60, 20, 220, 0.25);
+  color: white;
+}

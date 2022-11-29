@@ -1,16 +1,6 @@
-.background-logo {
-  width: 20%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  translate: -50% -50%;
-  z-index: 1;
-}
-
 .Home-Body {
   position: relative;
-  top: 50%;
-  translate: 0% -50%;
+  height: 100%;
   z-index: 2;
   display: flex;
   justify-content: space-between;
@@ -19,6 +9,7 @@
 
 /* Image */
 .Home-Body > .Container-Image > .Home-Image {
+  z-index: 3;
   overflow: visible;
   filter: drop-shadow(7px 7px 4px var(--shadow-black));
 }
@@ -46,30 +37,6 @@
 
 .home-icons > a > img {
   filter: drop-shadow(7px 7px 4px var(--shadow-black));
-}
-
-/* Slider */
-.Slider {
-  display: flex;
-  position: absolute;
-  left: 50%;
-  top: 90%;
-  translate: -50% -50%;
-  gap: 30px;
-}
-
-.Slider > div {
-  background: var(--white-one);
-  opacity: 0.5;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-}
-
-.Slider > .current-slider {
-  opacity: 1;
-  width: 90px;
-  border-radius: 10px;
 }
 
 /*DinamicText*/

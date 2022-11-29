@@ -1,0 +1,8 @@
+.Contact-Body {
+  position: relative;
+  /*translate: 100% -50%;*/
+  display: flex;
+  justify-content: space-between;
+  padding: 0 67px;
+  background-color: rgba(220, 20, 60, 0.25);
+}

@@ -1,8 +1,0 @@
-#globalContainer {
-  width: 100%;
-  position: fixed;
-  height: 100%;
-  box-sizing: border-box;
-  background: var(--background);
-  /*animation: first 34s ease infinite;*/
-}
