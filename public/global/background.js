@@ -26,7 +26,7 @@ function rgbToHex(arr) {
 function changeNumber() {
   let color = [0, value - 40, 61];
   let pato = rgbToHex(color);
-  globalContainer.style.setProperty("--background", pato);
+  //globalContainer.style.setProperty("--background", pato);
   if (value == 115) {
     resta = true;
     suma = false;
