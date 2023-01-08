@@ -38,26 +38,21 @@
   }
 
   /*Title and Icons*/
-  .Home-Info > .Home-Title {
-    align-items: center;
+  .Home-Body > .Home-Info {
+    border: 1px solid white;
   }
 
-  .Home-Title > h1 {
-    font-weight: bold;
+  .Home-Info > h1 {
     font-size: 30px;
     line-height: 45px;
     text-align: center;
   }
 
-  .Home-Title > h3 {
+  .Home-Info > h3 {
     font-weight: 500;
     font-size: 20px;
     line-height: 45px;
     text-align: center;
-  }
-
-  .Home-Title > h1 > br {
-    display: none;
   }
 
   .Home-Info > .home-icons {

@@ -18,12 +18,8 @@
 .Home-Body > .Home-Info {
   display: flex;
   flex-direction: column;
-  gap: 70px;
-}
-
-.Home-Info > .Home-Title {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
 }
 
 .Home-Info > .home-icons {
@@ -31,8 +27,24 @@
   gap: 75px;
 }
 
-.Home-Title > h1 > span {
+.Home-Info > h1 {
+  font-size: 60px;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
   color: var(--white-one);
+}
+
+.Home-Info > p > span {
+  color: var(--white-one);
+}
+
+.Home-Info > p {
+  width: 35em;
+  border-left: 2px solid white;
+  padding-left: 2em;
+  font-size: 20px;
+  line-height: 35px;
+  letter-spacing: 0.02em;
 }
 
 .home-icons > a > img {

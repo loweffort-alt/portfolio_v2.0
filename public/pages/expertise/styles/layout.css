@@ -1,8 +1,23 @@
 .Expertise-Body {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0 67px;
-  background-color: rgba(60, 20, 220, 0.25);
   color: white;
+}
+
+.Expertise-Body > div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.Expertise-Body > div > p {
+  color: var(--white-one);
+  font-size: 30px;
+  text-align: center;
+}
+
+.Expertise-Body > div > svg {
+  filter: blur(0.5px) grayscale(70%);
 }

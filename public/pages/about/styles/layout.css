@@ -1,9 +1,0 @@
-.About-Body {
-  position: relative;
-  /*translate: 100% -50%;*/
-  display: flex;
-  justify-content: space-between;
-  padding: 0 67px;
-  /*background-color: rgba(20, 220, 60, 0.25);*/
-  border: 1px solid white;
-}

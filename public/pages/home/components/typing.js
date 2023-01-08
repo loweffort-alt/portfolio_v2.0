@@ -41,4 +41,4 @@ function loop() {
   }
 }
 
-export default loop();
+export default loop;
