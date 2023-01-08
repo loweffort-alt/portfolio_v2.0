@@ -8,9 +8,6 @@ import sendEmail from "./pages/contact/emailjs.js";
 
 import dinamicColor from "./global/background.js";
 import slider from "./global/slider.js";
-(function () {
-  emailjs.init("user_qDxnPLfSumE8YRYdhPLD2");
-})();
 
 const submitButton = document.getElementById("submit");
 submitButton.addEventListener("click", (e) => {

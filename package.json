@@ -1,19 +1,23 @@
 {
-  "name": "animation",
-  "type": "commonjs",
+  "name": "portfolio_v2.0",
   "version": "1.0.0",
-  "description": "",
+  "description": ":))))",
   "main": "index.js",
   "scripts": {
-    "live": "live-server public"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loweffort-alt/portfolio_v2.0.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "live-server": "1.2.2"
+  "bugs": {
+    "url": "https://github.com/loweffort-alt/portfolio_v2.0/issues"
   },
+  "homepage": "https://github.com/loweffort-alt/portfolio_v2.0#readme",
   "dependencies": {
-    "express": "4.18.2"
+    "gh-pages": "4.0.0"
   }
 }
