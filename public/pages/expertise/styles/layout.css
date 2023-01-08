@@ -18,6 +18,14 @@
   text-align: center;
 }
 
-.Expertise-Body > div > svg {
+.Expertise-Body > .backend > svg {
   filter: blur(0.5px) grayscale(70%);
+}
+
+.frontend > svg:hover {
+  cursor: pointer;
+}
+
+.backend > svg:hover {
+  cursor: pointer;
 }

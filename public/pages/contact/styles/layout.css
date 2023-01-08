@@ -13,12 +13,12 @@
   justify-content: space-around;
 }
 
-.Contact-Body h1 {
+.Contact-Body > div > h1 {
   color: var(--white-one);
   letter-spacing: 0.1em;
 }
 
-.Contact-Body form {
+.Contact-Body > div > form {
   display: flex;
   flex-direction: column;
   gap: 20px;

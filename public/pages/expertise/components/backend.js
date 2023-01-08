@@ -1,6 +1,6 @@
 const Backend = () => {
   return `
-            <svg width="435" height="401">
+            <svg width="435" height="401" viewbox="0 0 435 401">
               <g id="Backend-Images">
                 <path
                   id="background-back"
