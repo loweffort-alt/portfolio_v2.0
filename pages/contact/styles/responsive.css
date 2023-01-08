@@ -1,0 +1,50 @@
+@media only screen and (max-width: 400px) {
+  .Contact-Body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Contact-Body > div {
+    justify-content: space-evenly;
+    width: 120%;
+    height: 100%;
+  }
+
+  .Contact-Body > div > form {
+    gap: 10px;
+  }
+
+  .textContainer input {
+    font-size: 15px;
+    letter-spacing: 0;
+  }
+
+  .textContainer .lbl-name {
+    font-size: 15px;
+    letter-spacing: 0;
+  }
+
+  .Contact-Body > div > h1 {
+    font-size: 30px;
+  }
+
+  .Contact-Body > svg {
+    width: 200%;
+    height: fit-content;
+    /*translate: -8% 0;*/
+  }
+  .textContainer input:focus + .lbl-name .text-name,
+  .textContainer input:valid + .lbl-name .text-name {
+    font-size: 13px;
+  }
+
+  .Name-Email {
+    gap: 20px;
+  }
+
+  .ButtonContainer > button {
+    padding: 10px 30px;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+  }
+}

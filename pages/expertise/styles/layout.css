@@ -1,0 +1,31 @@
+.Expertise-Body {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 67px;
+  color: white;
+}
+
+.Expertise-Body > div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.Expertise-Body > div > p {
+  color: var(--white-one);
+  font-size: 30px;
+  text-align: center;
+}
+
+.Expertise-Body > .backend > svg {
+  filter: blur(0.5px) grayscale(70%);
+}
+
+.frontend > svg:hover {
+  cursor: pointer;
+}
+
+.backend > svg:hover {
+  cursor: pointer;
+}

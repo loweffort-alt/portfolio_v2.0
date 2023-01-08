@@ -1,0 +1,23 @@
+@media only screen and (max-width: 400px) {
+  .Expertise-Body {
+    flex-direction: column;
+  }
+
+  .Expertise-Body > div {
+    gap: 50px;
+  }
+
+  .Expertise-Body > div > p {
+    font-size: 25px;
+  }
+
+  .frontend > svg {
+    width: 105%;
+    height: 105%;
+  }
+
+  .backend > svg {
+    width: 105%;
+    height: 105%;
+  }
+}

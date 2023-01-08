@@ -1,0 +1,102 @@
+/* Responsive */
+
+/* Responsive: Small Screen styles*/
+
+@media only screen and (max-width: 1024px) {
+  .background-logo {
+    width: 30%;
+  }
+}
+
+/* Responsive: Mobile styles*/
+
+@media only screen and (max-width: 480px) {
+  .background-logo {
+    width: 60%;
+  }
+}
+
+/*Responsive: Iphone*/
+
+@media only screen and (max-width: 400px) {
+  .background-logo {
+    width: 60%;
+  }
+
+  .Home-Body {
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    justify-content: center;
+  }
+
+  /*Image*/
+  .Home-Body > .Container-Image > .Home-Image {
+    width: 120%;
+    height: 120%;
+    translate: -8% 0;
+  }
+
+  /*Title and Icons*/
+  .Home-Body > .Home-Info {
+    justify-content: space-evenly;
+    height: 60%;
+  }
+
+  .Home-Info > h1 {
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  .Home-Info > .home-icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 0;
+  }
+
+  .Home-Info > p {
+    border: none;
+    padding: 0;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0em;
+    width: 100%;
+    text-align: center;
+  }
+
+  .home-icons > a > img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /*Slider*/
+  .Slider {
+    left: 95%;
+    top: 50%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Slider > a {
+    width: 10px;
+    height: 10px;
+  }
+
+  .Slider > .current-slider {
+    animation: openVertical 0.5s ease-out forwards;
+  }
+
+  @keyframes openVertical {
+    to {
+      opacity: 1;
+      height: 50px;
+    }
+  }
+
+  /*DinamicText*/
+  #dinamicText {
+    height: 1.5em;
+  }
+}

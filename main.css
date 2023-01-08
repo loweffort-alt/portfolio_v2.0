@@ -1,0 +1,5 @@
+@import url("global/styles/main.css");
+@import url("global/styles/colors.css");
+@import url("./pages/home/styles/main.css");
+@import url("./pages/expertise/styles/main.css");
+@import url("./pages/contact/styles/main.css");

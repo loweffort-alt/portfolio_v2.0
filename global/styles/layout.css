@@ -1,0 +1,63 @@
+#globalContainer {
+  --background: linear-gradient(
+    285.18deg,
+    #000000 0%,
+    rgba(0, 61, 61) 50%,
+    #000000 100%
+  );
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  box-sizing: border-box;
+  background: var(--background);
+}
+
+.background-logo {
+  width: 20%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+}
+
+.gridContainer {
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+  display: grid;
+  grid-auto-columns: 100vw;
+  grid-auto-flow: column;
+}
+
+/* Slider */
+.Slider {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  translate: -50% -50%;
+  gap: 30px;
+}
+
+.Slider > a {
+  background: var(--white-one);
+  opacity: 0.5;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.Slider > a:hover {
+  cursor: pointer;
+}
+
+.Slider > .current-slider {
+  animation: open 0.5s ease-out forwards;
+}
+
+@keyframes open {
+  to {
+    opacity: 1;
+    width: 90px;
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Animation</title>
+  </head>
+  <body>
+    <div id="globalContainer">
+      <img
+        src="images/Logo.svg"
+        alt="background-logo"
+        class="background-logo"
+      />
+      <section class="gridContainer">
+        <section class="Home-Body" id="Home"></section>
+        <section class="Expertise-Body" id="Expertise"></section>
+        <section class="Contact-Body" id="Contact"></section>
+      </section>
+      <nav class="Slider">
+        <a class="current-slider" id="toHome"></a>
+        <a id="toExpertise"></a>
+        <a id="toContact"></a>
+      </nav>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

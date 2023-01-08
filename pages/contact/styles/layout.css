@@ -1,0 +1,116 @@
+.Contact-Body {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 67px;
+  font-size: 60px;
+  color: var(--white-one);
+}
+
+.Contact-Body > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Contact-Body > div > h1 {
+  color: var(--white-one);
+  letter-spacing: 0.1em;
+}
+
+.Contact-Body > div > form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.textContainer {
+  padding: 10px 0px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+
+.textContainer input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  color: var(--white-one);
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border: none;
+  outline: 0px;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+
+.textContainer .lbl-name {
+  position: absolute;
+  padding-bottom: 10px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.textContainer .lbl-name:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid var(--white-one);
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.text-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: all 0.3s ease;
+  color: #909090;
+}
+
+.textContainer input:focus + .lbl-name .text-name,
+.textContainer input:valid + .lbl-name .text-name {
+  transform: translateY(-180%);
+  font-size: 18px;
+  color: #909090;
+}
+
+.textContainer input:focus + .lbl-name:after {
+  transform: translateX(0%);
+}
+
+.Name-Email {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.ButtonContainer > button {
+  width: fit-content;
+  padding: 14px 41px;
+  font-size: 15px;
+  background: none;
+  text-decoration: none;
+  color: var(--white-one);
+  border: 1px solid #c7c7c7;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+}
+
+.ButtonContainer > button:hover {
+  cursor: pointer;
+  background: var(--white-one);
+  transition: ease 1s;
+  color: black;
+}

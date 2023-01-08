@@ -1,0 +1,11 @@
+/* Responsive: Mobile styles*/
+
+@media only screen and (max-width: 400px) {
+  .gridContainer {
+    top: 0%;
+    transform: translate(0%, 0%);
+    height: 100%;
+    grid-auto-rows: 100%;
+    grid-auto-flow: row;
+  }
+}

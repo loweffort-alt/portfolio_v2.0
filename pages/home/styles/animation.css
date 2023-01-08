@@ -1,0 +1,96 @@
+/*Fade In Title*/
+.Home-Info {
+  animation: 2s ease-out show forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*Blink dinamicText*/
+#dinamicText::after {
+  animation: blink 500ms ease infinite;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+
+/*Home Image*/
+#Window {
+  position: relative;
+  translate: 150px -550px;
+  opacity: 0.5;
+  animation: WindowX 1s cubic-bezier(0, 1.5, 1, 0.85) 1 forwards,
+    Parabolic 1s 1 cubic-bezier(0, 100, 1, 100) forwards;
+}
+
+#Desktop {
+  position: relative;
+  translate: 650px 0px;
+  opacity: 0.7;
+  animation: DesktopX 1s cubic-bezier(0.06, 0.59, 0.76, 1.21) 1s 1 forwards;
+}
+
+#Silla {
+  position: relative;
+  translate: 650px 0px;
+  opacity: 0.7;
+  animation: DesktopX 1s cubic-bezier(0.06, 0.59, 0.76, 1.21) 1s 1 forwards;
+}
+
+#Man {
+  position: relative;
+  translate: 460px -150px;
+  opacity: 0.5;
+  animation: ManX 1s cubic-bezier(0, 1.5, 1, 0.85) 2s 1 forwards,
+    Parabolic 1s 1 cubic-bezier(0, 500, 1, 500) 2s forwards;
+}
+
+#Taza {
+  position: relative;
+  translate: 350px 0px;
+  opacity: 0.5;
+  animation: DesktopX 1s cubic-bezier(0, 1.5, 1, 0.85) 3s 1 forwards,
+    Parabolic 1s 1 cubic-bezier(0, 50, 1, 50) 3s forwards;
+}
+
+@keyframes Parabolic {
+  to {
+    transform: translateY(-1px);
+  }
+}
+
+@keyframes WindowX {
+  to {
+    opacity: 1;
+    translate: 0px 0px;
+    transform: translate(0.5px, -2px);
+  }
+}
+
+@keyframes DesktopX {
+  80% {
+    opacity: 1;
+    translate: -30px 0px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0px 0px;
+  }
+}
+
+@keyframes ManX {
+  to {
+    translate: 0px 0px;
+    opacity: 1;
+    transform: translate(0.05px, -1px);
+  }
+}
