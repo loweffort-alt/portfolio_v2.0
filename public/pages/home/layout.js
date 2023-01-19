@@ -21,7 +21,7 @@ const Layout = () => {
     <a href="mailto:farfan_alexander@outlook.com" target="_blank">
       <img src="images/Home-Icons/email.svg" alt="email-logo" />
     </a>
-    <a href="https://drive.google.com/file/d/1JwILcdWksCjSnvmxUkH1wjoF3e_QWX3W/view?usp=sharing" target="_blank">
+    <a href="https://drive.google.com/file/d/1cD8mmd7F3LbAg3V3Yu8PKiyTMSouNMBt/view?usp=share_link" target="_blank">
       <img src="images/Home-Icons/PDF.svg" alt="pdf-logo" />
     </a>
       </div>
